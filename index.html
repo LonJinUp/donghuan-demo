@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html mip>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css">
+    <!-- canonical 中的链接优先填写对应内容的移动端页面（H5）地址 -->
+    <link rel="canonical" href="https://www.example.com/your/path.html">
+    <title>Hello World</title>
+
+    <style mip-custom>
+        /*初始化*/
+        body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button,
+        input, textarea, th, td {
+            margin: 0;
+            padding: 0;
+        }
+
+        body, button, input, select, textarea {
+            font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 100%;
+        }
+
+        address, cite, dfn, em, var {
+            font-style: normal;
+        }
+
+        code, kbd, pre, samp {
+            font-family: couriernew, courier, monospace;
+        }
+
+        small {
+            font-size: 12px;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color:#000000;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+
+        sup {
+            vertical-align: text-top;
+        }
+
+        sub {
+            vertical-align: text-bottom;
+        }
+
+        legend {
+            color: #000;
+        }
+
+        fieldset, img {
+            border: 0;
+        }
+
+        button, input, select, textarea {
+            font-size: 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        /*初始化结束*/
+
+        @font-face {
+            font-family: 'iconfont';  /* project id 864609 */
+            src: url('//at.alicdn.com/t/font_864609_uzz64zmwno.eot');
+            src: url('//at.alicdn.com/t/font_864609_uzz64zmwno.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_864609_uzz64zmwno.woff') format('woff'),
+            url('//at.alicdn.com/t/font_864609_uzz64zmwno.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_864609_uzz64zmwno.svg#iconfont') format('svg');
+        }
+        .iconfont{
+            font-family:"iconfont" !important;
+            font-size:16px;font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        div{
+            overflow: hidden;
+        }
+        header{
+            width: 100%;
+            height: auto;
+        }
+        .top-box{
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 0 100px;
+            height: 90px;
+            width: 100%;
+        }
+        .top-left,.top-right{
+            float: left;
+        }
+        .top-right ul li{
+            float: left;
+            width: 92px;
+            height: 90px;
+            line-height: 90px;
+            text-align: center;
+            transition: all 1s ease-in-out;
+            -webkit-transition: all 1s ease-in-out;
+            /*color: #000;*/
+
+        }
+        .top-right ul li a{
+            font-size: 16px;
+        }
+        .active{
+            background: #c9262b;
+            color: #fff;
+        }
+
+        .top-right ul li:hover{
+            background: #c9262b;
+        }
+        .top-right ul li:hover a{
+            color: #fff;
+        }
+
+        .tel-box{
+            float: right;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .tel-ico{
+            font-size: 40px;
+            color: #c9262b;
+        }
+        .tel p{
+            font-size: 14px;
+        }
+        .tel-right{
+            float: right;
+            margin-left: 10px;
+            height: 40px;
+        }
+        .tel{
+            display: flex;
+            align-items: center;
+        }
+        .mobile-menu{
+            display: none;
+        }
+        .active1{
+            color: #fff;
+        }
+        footer{
+            background: #e8e8e8;
+            width: 100%;
+
+        }
+        .footer-con{
+            box-sizing: border-box;
+            padding: 0 100px;
+            margin: 0 auto;
+        }
+
+        /* 当浏览器的可视区域小于980px */
+        @media screen and ( max-width: 980px ) {
+            .mobile-menu{
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .top-box{
+                display: none;
+            }
+            .mobile-menu-box{
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 640px){
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--pc端菜单-->
+        <div class="top-box">
+            <div class="top-left">
+
+            </div>
+            <div class="top-right">
+                <ul>
+                    <li class="active">
+                        <a href="" class="active1">首页</a>
+                    </li>
+                    <li>
+                        <a href="">走进东环</a>
+                    </li>
+                    <li>
+                        <a href="">新闻资讯</a>
+                    </li>
+                    <li>
+                        <a href="">业务领域</a>
+                    </li>
+                    <li>
+                        <a href="">律师团队</a>
+                    </li>
+                    <li>
+                        <a href="">案例精选</a>
+                    </li>
+                    <li>
+                        <a href="">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tel-box">
+                <div class="tel">
+                    <i class="iconfont tel-ico">&#xe612;</i>
+                    <div class="tel-right">
+                       <p>咨询热线</p>
+                       <p>400-1222-222</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--移动端菜单-->
+        <div class="mobile-menu">
+            <i id="logo" on="tap:sidebar.open" class="iconfont">&#xe63e;</i>
+            <span>导航菜单</span>
+
+        </div>
+
+        <mip-sidebar
+                id="sidebar"
+                layout="nodisplay"
+                class="mip-hidden mobile-menu-box">
+            <ul>
+                <li>
+                    <a href="#">MIP官网</a>
+                </li>
+                <li>Nav item 1</li>
+                <li>Nav item 2</li>
+                <li>Nav item 3</li>
+                <li>Nav item 4</li>
+                <li>Nav item 5</li>
+                <li>Nav item 6</li>
+            </ul>
+        </mip-sidebar>
+
+    </header>
+    <!--banner-->
+    <banner>
+        <mip-carousel
+                autoplay
+                defer="4000"
+                layout="responsive" width="1920" height="735"
+        >
+            <mip-img
+                    src="https://www.mipengine.org/static/img/sample_01.jpg">
+            </mip-img>
+            <mip-img
+                    src="https://www.mipengine.org/static/img/sample_02.jpg">
+            </mip-img>
+            <mip-img
+                    src="https://www.mipengine.org/static/img/sample_03.jpg">
+            </mip-img>
+
+        </mip-carousel>
+    </banner>
+    <!--footer-->
+    <footer>
+        <div class="footer-con">
+            <div class="f-con-left">
+                
+            </div>
+            <div class="f-con-right"></div>
+        </div>
+    </footer>
+
+
+<script src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>
+<script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+</body>
+</html>
