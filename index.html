@@ -6,8 +6,7 @@
     <link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css">
     <!-- canonical 中的链接优先填写对应内容的移动端页面（H5）地址 -->
     <link rel="canonical" href="https://www.example.com/your/path.html">
-    <title>Hello World</title>
-
+    <title>东环律师事务所</title>
     <style mip-custom>
         /*初始化*/
         body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button,
@@ -168,11 +167,57 @@
 
         }
         .footer-con{
-            box-sizing: border-box;
-            padding: 0 100px;
+            padding: 30px 100px;
             margin: 0 auto;
-        }
+            height: 160px;
 
+        }
+        .f-con-left{
+            float: left;
+        }
+        .f-con-right{
+            float: right;
+        }
+        .red{
+            color: #ca272c;
+            font-size: 14px;
+        }
+        .a-hover{
+            display: flex;
+            align-items: center;
+        }
+        .a-hover a{
+            font-size: 14px;
+            text-decoration: none;
+            color: #666666;
+        }
+        .a-hover a:hover{
+            color: #ca272c;
+        }
+        .address{
+            margin:15PX 0;
+            color: #666;
+            line-height: 26px;
+            font-size: 14px;
+            color: #666666;
+        }
+        .code{
+            display: block;
+            width: 130px;
+            height: 130px;
+        }
+        .f-con-right p{
+            font-size: 14px;
+            text-align: center;
+            line-height: 26px;
+            color: #666;
+        }
+        .footer-text{
+            width: 100%;
+            text-align: center;
+            line-height: 26px;
+            color: #666;
+        }
         /* 当浏览器的可视区域小于980px */
         @media screen and ( max-width: 980px ) {
             .mobile-menu{
@@ -288,9 +333,25 @@
     <footer>
         <div class="footer-con">
             <div class="f-con-left">
-                
+                <div class="a-hover">
+                    <span class="red">友情链接:</span>
+                    <a target="_blank" href="http://www.court.gov.cn/">中华人民共和国最高人民法院</a> &nbsp &nbsp
+                    <a target="_blank" href="https://www.chinacourt.org/index.shtml">中国法院网</a>
+                </div>
+                <div class="address">
+                    地    址：北京市东城区南竹竿胡同6号北京INN大厦3号楼607 <br>
+                    咨询热线：010-53678058 <br>
+                    邮    箱：DH@donghuanlawyers.com <br>
+                    乘车路线：公交44、特2、特12朝阳门南下车;公交110、101、109、140、58朝阳门内下车;地铁2号线、6号线朝阳门站H口出
+                </div>
             </div>
-            <div class="f-con-right"></div>
+            <div class="f-con-right">
+                <div class="">
+                    <img src="image/erweima.jpg" alt="" class="code">
+                </div>
+               <p>微信关注 即可咨询</p>
+            </div>
+            <div class="footer-text">© 2016 北京东环律师事务所</div>
         </div>
     </footer>
 
