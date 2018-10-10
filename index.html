@@ -231,8 +231,22 @@
                 display: none;
             }
             .mobile-menu-box{
-                width: 50%;
+                width: 65%;
+                background: #fff;
             }
+            .menu-box{
+                box-sizing: border-box;
+                padding: 20px;
+            }
+            .menu-box h2{
+                font-size: 20px;
+            }
+
+            .footer-con{
+                display: none;
+            }
+
+
         }
 
         @media screen and (max-width: 640px){
@@ -289,16 +303,14 @@
         <div class="mobile-menu">
             <i id="logo" on="tap:sidebar.open" class="iconfont">&#xe63e;</i>
             <span>导航菜单</span>
-
         </div>
-
         <mip-sidebar
                 id="sidebar"
                 layout="nodisplay"
                 class="mip-hidden mobile-menu-box">
-            <ul>
+            <ul class="menu-box">
                 <li>
-                    <a href="#">MIP官网</a>
+                   <h2>东环律师事务所</h2>
                 </li>
                 <li>Nav item 1</li>
                 <li>Nav item 2</li>
@@ -308,6 +320,7 @@
                 <li>Nav item 6</li>
             </ul>
         </mip-sidebar>
+
 
     </header>
     <!--banner-->
@@ -345,14 +358,15 @@
                     乘车路线：公交44、特2、特12朝阳门南下车;公交110、101、109、140、58朝阳门内下车;地铁2号线、6号线朝阳门站H口出
                 </div>
             </div>
+
             <div class="f-con-right">
                 <div class="">
                     <mip-img src="image/erweima.jpg" alt="" class="code">
                 </div>
                <p>微信关注 即可咨询</p>
             </div>
-            <div class="footer-text">© 2016 北京东环律师事务所</div>
         </div>
+        <div class="footer-text">© 2016 北京东环律师事务所</div>
     </footer>
 
 
