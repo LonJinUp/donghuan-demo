@@ -121,10 +121,7 @@
         .top-right ul li a{
             font-size: 16px;
         }
-        .active{
-            background: #c9262b;
-            color: #fff;
-        }
+
 
         .top-right ul li:hover{
             background: #c9262b;
@@ -219,11 +216,67 @@
             color: #666;
         }
         .content{
-            display: block;
             width: 100%;
-            height:700px;
-            background: url("image/index_business_bg.jpg")no-repeat center center /100% 100%;
+            box-sizing: border-box;
+            padding: 0 100px;
+
         }
+        .con-left{
+            float: left;
+        }
+        .con-right{
+            float: right;
+        }
+
+        .banner{
+            width: 100%;
+            height: 300px;
+            background: url("image/about_banner.jpg")no-repeat center center /100% 100%;
+        }
+        .con-about{
+            width: 224px;
+            height: auto;
+            text-align: center;
+            background: #fff;
+            margin-top: 40px;
+            box-shadow: 0px 0px 5px 2px rgba(218,218,218,0.45);
+            border-top: 0;
+            margin-bottom: 40px;
+        }
+        .about-btn{
+            display: inline-block;
+            width: 222px;
+            height: 50px;
+            line-height: 50px;
+            margin-bottom: 5px;
+            font-size: 24px;
+            border: 1px solid #c9262b;
+            color: #c9262b;
+        }
+        .active{
+            background: #c9262b;
+            color:#fff;
+        }
+        .about-btn:hover{
+            background: #c9262b;
+            color:#fff;
+        }
+        .left-img{
+            max-width: 224px;
+            box-shadow: 3px 3px 3px #e6e4e4;
+        }
+        .con-about span{
+            display: inline-block;
+            margin: 30px 0;
+            font-size: 18px;
+        }
+        .con-about p{
+            font-size: 18px;
+        }
+        .about-margin{
+            margin: 20px 0;
+        }
+
         /* 当浏览器的可视区域小于980px */
         @media screen and ( max-width: 980px ) {
             .mobile-menu{
@@ -253,9 +306,12 @@
             .footer-con{
                 display: none;
             }
-            .content{
-                height: 100px;
+
+            .banner{
+                height: 80px;
             }
+
+
         }
 
         @media screen and (max-width: 640px){
@@ -266,149 +322,149 @@
 
 </head>
 <body>
-    <!--header-->
-    <header>
-        <!--pc端菜单-->
-        <div class="top-box">
-            <div class="top-left">
+<!--header-->
+<header>
+    <!--pc端菜单-->
+    <div class="top-box">
+        <div class="top-left">
 
-            </div>
-            <div class="top-right">
-                <ul>
-                    <li class="active">
-                        <a href="index.html" class="active1">首页</a>
-                    </li>
-                    <li>
-                        <a href="about.html">走进东环</a>
-                    </li>
-                    <li>
-                        <a href="">新闻资讯</a>
-                    </li>
-                    <li>
-                        <a href="">业务领域</a>
-                    </li>
-                    <li>
-                        <a href="">律师团队</a>
-                    </li>
-                    <li>
-                        <a href="">案例精选</a>
-                    </li>
-                    <li>
-                        <a href="">联系我们</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="tel-box">
-                <div class="tel">
-                    <i class="iconfont tel-ico">&#xe612;</i>
-                    <div class="tel-right">
-                       <p>咨询热线</p>
-                       <p>400-1222-222</p>
-                    </div>
-                </div>
-            </div>
         </div>
-        <!--移动端菜单-->
-        <div class="mobile-menu" id="logo" on="tap:sidebar.open">
-            <i class="iconfont">&#xe63e;</i>
-            <span>导航菜单</span>
-        </div>
-        <mip-sidebar
-                id="sidebar"
-                layout="nodisplay"
-                class="mip-hidden mobile-menu-box">
-            <ul class="menu-box">
+        <div class="top-right">
+            <ul>
                 <li>
-                   <h2>东环律师事务所</h2>
+                    <a href="index.html">首页</a>
+                </li>
+                <li class="active">
+                    <a href="" class="active1">走进东环</a>
                 </li>
                 <li>
-                    <a href="about.html">
-                        <h4>走进东环</h4>
-                    </a>
+                    <a href="">新闻资讯</a>
                 </li>
                 <li>
-                    <a href="#">
-                        <h4>新闻资讯</h4>
-                    </a>
+                    <a href="">业务领域</a>
                 </li>
                 <li>
-                    <a href="#">
-                        <h4>业务领域</h4>
-                    </a>
+                    <a href="">律师团队</a>
                 </li>
                 <li>
-                    <a href="#">
-                        <h4>律师团队</h4>
-                    </a>
+                    <a href="">案例精选</a>
                 </li>
                 <li>
-                    <a href="#">
-                        <h4>案例精选</h4>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h4>联系我们</h4>
-                    </a>
+                    <a href="">联系我们</a>
                 </li>
             </ul>
-        </mip-sidebar>
-
-
-    </header>
-    <!--banner-->
-    <banner>
-        <mip-carousel
-                autoplay
-                defer="4000"
-                layout="responsive" width="1920" height="735"
-        >
-            <mip-img
-                    src="https://www.mipengine.org/static/img/sample_01.jpg">
-            </mip-img>
-            <mip-img
-                    src="https://www.mipengine.org/static/img/sample_02.jpg">
-            </mip-img>
-            <mip-img
-                    src="https://www.mipengine.org/static/img/sample_03.jpg">
-            </mip-img>
-
-        </mip-carousel>
-    </banner>
-    <!--banner end-->
-
-    <!--content-->
-    <div class="content">
-
-    </div>
-    <!--content end-->
-
-    <!--footer-->
-    <footer>
-        <div class="footer-con">
-            <div class="f-con-left">
-                <div class="a-hover">
-                    <span class="red">友情链接:</span>
-                    <a target="_blank" href="http://www.court.gov.cn/">中华人民共和国最高人民法院</a> &nbsp &nbsp
-                    <a target="_blank" href="https://www.chinacourt.org/index.shtml">中国法院网</a>
+        </div>
+        <div class="tel-box">
+            <div class="tel">
+                <i class="iconfont tel-ico">&#xe612;</i>
+                <div class="tel-right">
+                    <p>咨询热线</p>
+                    <p>400-1222-222</p>
                 </div>
-                <div class="address">
-                    地    址：北京市东城区南竹竿胡同6号北京INN大厦3号楼607 <br>
-                    咨询热线：010-53678058 <br>
-                    邮    箱：DH@donghuanlawyers.com <br>
-                    乘车路线：公交44、特2、特12朝阳门南下车;公交110、101、109、140、58朝阳门内下车;地铁2号线、6号线朝阳门站H口出
-                </div>
-            </div>
-
-            <div class="f-con-right">
-                <div class="">
-                    <mip-img src="image/erweima.jpg" alt="" class="code">
-                </div>
-               <p>微信关注 即可咨询</p>
             </div>
         </div>
-        <div class="footer-text">© 2016 北京东环律师事务所</div>
-    </footer>
+    </div>
+    <!--移动端菜单-->
+    <div class="mobile-menu" id="logo" on="tap:sidebar.open">
+        <i class="iconfont">&#xe63e;</i>
+        <span>导航菜单</span>
+    </div>
+    <mip-sidebar
+            id="sidebar"
+            layout="nodisplay"
+            class="mip-hidden mobile-menu-box">
+        <ul class="menu-box">
+            <li>
+                <h2>东环律师事务所</h2>
+            </li>
+            <li>
+                <a href="#">
+                    <h4>走进东环</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h4>新闻资讯</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h4>业务领域</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h4>律师团队</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h4>案例精选</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h4>联系我们</h4>
+                </a>
+            </li>
+        </ul>
+    </mip-sidebar>
+
+
+</header>
+<!--banner-->
+<div class="banner"></div>
+<!--banner end-->
+
+<!--content-->
+<div class="content">
+    <div class="con-left">
+        <div class="con-about">
+            <div class="btn-box">
+                <a class="about-btn active" href="#">关于我们</a>
+                <a class="about-btn" href="#">关于我们</a>
+            </div>
+            <img src="image/left_img.jpg" alt="" class="left-img">
+            <span>东环律师事务所</span>
+            <p class="red">全国免费咨询热线</p>
+            <p class="red">010-53678058</p>
+            <br>
+            <a class="about-btn about-margin" href="#">在线咨询</a>
+        </div>
+    </div>
+    <div class="con-right">
+
+    </div>
+</div>
+<!--content end-->
+
+
+<!--footer-->
+<footer>
+    <div class="footer-con">
+        <div class="f-con-left">
+            <div class="a-hover">
+                <span class="red">友情链接:</span>
+                <a target="_blank" href="http://www.court.gov.cn/">中华人民共和国最高人民法院</a> &nbsp &nbsp
+                <a target="_blank" href="https://www.chinacourt.org/index.shtml">中国法院网</a>
+            </div>
+            <div class="address">
+                地    址：北京市东城区南竹竿胡同6号北京INN大厦3号楼607 <br>
+                咨询热线：010-53678058 <br>
+                邮    箱：DH@donghuanlawyers.com <br>
+                乘车路线：公交44、特2、特12朝阳门南下车;公交110、101、109、140、58朝阳门内下车;地铁2号线、6号线朝阳门站H口出
+            </div>
+        </div>
+
+        <div class="f-con-right">
+            <div class="">
+                <mip-img src="image/erweima.jpg" alt="" class="code">
+            </div>
+            <p>微信关注 即可咨询</p>
+        </div>
+    </div>
+    <div class="footer-text">© 2016 北京东环律师事务所</div>
+</footer>
 
 
 <script src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>
