@@ -328,6 +328,57 @@
         .mobile-logo{
             display: none;
         }
+        .pc-3{
+            float: left;
+            width: 33.33%;
+            box-sizing: border-box;
+            margin-top: 10px;
+            -webkit-transition: all .2s linear;
+            transition: all .2s linear;
+            border-radius: 6px;
+        }
+        .pc-3:hover{
+            -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            box-shadow:0 15px 30px rgba(0,0,0,0.1);
+            -webkit-transform:translate3d(0, -2px, 0);
+            transform:translate3d(0, -2px, 0);
+        }
+        .team-logo{
+            width: 50%;
+            height: 200px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .team-logo img{
+            width: 100%;
+            height: 100%;
+            transition: all 0.6s ease-in-out;
+            -moz-transition: all 0.6s ease-in-out;
+            -webkit-transition: all 0.6s ease-in-out;
+            -o-transition: all 0.6s ease-in-out;
+        }
+
+        .team-logo:hover img{
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+        }
+        .team-title{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+        .team-title h3{
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+        }
+        .team-title p{
+            font-size: 14px;
+            color: #666;
+        }
 
         /* 当浏览器的可视区域小于980px */
         @media screen and ( max-width: 980px ) {
@@ -414,7 +465,14 @@
                 font-size: 20px;
                 color: rgb(133, 128, 232);
             }
-
+            .pc-3{
+                float: left;
+                width: 50%;
+            }
+            .team-logo{
+                width: 80%;
+            }
+            
         }
 
         @media screen and (max-width: 640px){
@@ -531,8 +589,8 @@
     <div class="con-left">
         <div class="con-about">
             <div class="btn-box">
-                <a class="about-btn active" href="#">关于我们</a>
-                <a class="about-btn" href="team.html">今中团队</a>
+                <a class="about-btn" href="about.html">关于我们</a>
+                <a class="about-btn active" href="team.html">今中团队</a>
             </div>
             <img src="image/left_img.jpg" alt="" class="left-img">
             <span>东环律师事务所</span>
@@ -550,15 +608,53 @@
                 <a href="">走进东环</a>
             </div>
         </div>
-        <div class="about-title">关于东环</div>
+        <div class="about-title">律师团队</div>
         <div class="about-content">
-             &nbsp;&nbsp; &nbsp;&nbsp;北京东环律师事务所简称东环律师事务所，是一家由多位具备律师资格的原国家司法行政机关工作人员及一批有着多年执业律师工作经验的资深律师组成。其业务主要包括非诉业务、民商诉讼、刑事诉讼等全面律师法律服务业务。办公地点设在北京，业务遍布全国。北京东环律师事务所坚持和坚守“公平正义，法律至上的理念”，“始终以当事人的利益为最大利益”，以“务实、高效”为工作基本要求。
-
-            北京东环律师事务所在发展中坚持"以人为本"的人才战略，逐步形成了由专业律师人才、专业市场人才、专业管理人才组成的人才队伍，保障了律师事务所整体战略目标的逐步实现。<br> <br>
-
-            &nbsp;&nbsp; &nbsp;&nbsp;为客户提供满意的法律服务是我们矢志不渝的目标，北京东环律师事务所坚持以”专业”、"务实“、”高效"为服务原则，坚持以 “诚心““真心”“责任心”对待客户为立所的根本，始终以客户的需求为关注焦点，以顾客满意为工作目标，充分发挥专业优势，为客户提供专业化、综合性的法律服务。
-
-            北京东环律师事务所位于北京东二环商务区，拥有便捷的交通和集中的商务资源。北京东环律师具备国内外著名法律学府的教育背景以及在金融、知识产权、国际贸易等行业企业、行业协会、大学和司法行政机关的工作经历。这些优势使得东环律师在各自业务领域能够为客户提供高标准的法律服务，包括民商诉讼、刑事诉讼、企业风险防控、金融、证券、房地产与基础设施、公司、破产重整、知识产权、能源与环保、信息技术等十一个业务领域。同时，东环律师事务所不断学习和追求先进的管理理念，东环律师不满足于现状，如饥似渴地用新的知识充实和武装自己，发扬高度的团队合作精神，不同业务领域的律师相互配合为客户提供全方位的满意的法律服务。
+            <div class="pc-3">
+                <div class="team-logo">
+                    <img src="image/1536911810.jpg" alt="">
+                </div>
+                <div class="team-title">
+                    <h3>廉帅律师</h3>
+                    <p>廉帅律师，北京市律师协会会员，执业期间，长期为大型央企、国企提供法律服务，为多家企业及上市公司提供挂牌、上市、并购及重组等法律服务，并且担任常年法律顾问。多年致力于研究公司法方向，擅长处理公司法、合同法等方面的法律纠纷，严谨、认真的态度赢得了很多企业客户的好评。</p>
+                </div>
+            </div>
+            <div class="pc-3">
+                <div class="team-logo">
+                    <img src="image/1536911810.jpg" alt="">
+                </div>
+                <div class="team-title">
+                    <h3>廉帅律师</h3>
+                    <p>廉帅律师，北京市律师协会会员，执业期间，长期为大型央企、国企提供法律服务，为多家企业及上市公司提供挂牌、上市、并购及重组等法律服务，并且担任常年法律顾问。多年致力于研究公司法方向，擅长处理公司法、合同法等方面的法律纠纷，严谨、认真的态度赢得了很多企业客户的好评。</p>
+                </div>
+            </div>
+            <div class="pc-3">
+                <div class="team-logo">
+                    <img src="image/1536911810.jpg" alt="">
+                </div>
+                <div class="team-title">
+                    <h3>廉帅律师</h3>
+                    <p>廉帅律师，北京市律师协会会员，执业期间，长期为大型央企、国企提供法律服务，为多家企业及上市公司提供挂牌、上市、并购及重组等法律服务，并且担任常年法律顾问。多年致力于研究公司法方向，擅长处理公司法、合同法等方面的法律纠纷，严谨、认真的态度赢得了很多企业客户的好评。</p>
+                </div>
+            </div>
+            <div class="pc-3">
+                <div class="team-logo">
+                    <img src="image/1536911810.jpg" alt="">
+                </div>
+                <div class="team-title">
+                    <h3>廉帅律师</h3>
+                    <p>廉帅律师，北京市律师协会会员，执业期间，长期为大型央企、国企提供法律服务，为多家企业及上市公司提供挂牌、上市、并购及重组等法律服务，并且担任常年法律顾问。多年致力于研究公司法方向，擅长处理公司法、合同法等方面的法律纠纷，严谨、认真的态度赢得了很多企业客户的好评。</p>
+                </div>
+            </div>
+            <div class="pc-3">
+                <div class="team-logo">
+                    <img src="image/1536911810.jpg" alt="">
+                </div>
+                <div class="team-title">
+                    <h3>廉帅律师</h3>
+                    <p>廉帅律师，北京市律师协会会员，执业期间，长期为大型央企、国企提供法律服务，为多家企业及上市公司提供挂牌、上市、并购及重组等法律服务，并且担任常年法律顾问。多年致力于研究公司法方向，擅长处理公司法、合同法等方面的法律纠纷，严谨、认真的态度赢得了很多企业客户的好评。</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

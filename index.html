@@ -77,11 +77,11 @@
 
         @font-face {
             font-family: 'iconfont';  /* project id 864609 */
-            src: url('//at.alicdn.com/t/font_864609_uzz64zmwno.eot');
-            src: url('//at.alicdn.com/t/font_864609_uzz64zmwno.eot?#iefix') format('embedded-opentype'),
-            url('//at.alicdn.com/t/font_864609_uzz64zmwno.woff') format('woff'),
-            url('//at.alicdn.com/t/font_864609_uzz64zmwno.ttf') format('truetype'),
-            url('//at.alicdn.com/t/font_864609_uzz64zmwno.svg#iconfont') format('svg');
+            src: url('//at.alicdn.com/t/font_864609_b7jw8j0u71v.eot');
+            src: url('//at.alicdn.com/t/font_864609_b7jw8j0u71v.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_864609_b7jw8j0u71v.woff') format('woff'),
+            url('//at.alicdn.com/t/font_864609_b7jw8j0u71v.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_864609_b7jw8j0u71v.svg#iconfont') format('svg');
         }
         .iconfont{
             font-family:"iconfont" !important;
@@ -239,9 +239,240 @@
         .mobile-logo{
             display: none;
         }
+        .w1200{
+            width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+        }
+        .w1200 ul{
+            overflow: hidden;
+            height: 100%;
+        }
+        .w1200 ul li{
+            float: left;
+            overflow: hidden;
+            width: 20%;
+            height: 100%;
+            position: relative;
+        }
+        .red-bg{
+            display: none;
+            height: 100%;
+            width: 100%;
+            background: rgb(133, 128, 232);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .w1200 ul li:hover .red-bg{
+            display: block;
+            animation: redbg 0.6s;
+            -moz-animation: redbg 0.6s;	/* Firefox */
+            -webkit-animation: redbg 0.6s;	/* Safari 和 Chrome */
+            -o-animation: redbg 0.6s;
+        }
+        .w1200 ul li a{
+            display: block;
+            margin-top: 206px;
+        }
+        .con-big{
+           display: block;
+            box-sizing: border-box;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            border-radius:100%;
+            color: rgb(133, 128, 232);
+            text-align: center;
+            border: 8px rgb(133, 128, 232) solid;
+            text-align: center;
+            line-height: 150px;
+            position: relative;
+        }
+        .w1200 ul li:hover .con-big{
+            border: none;
+            transition: all 0.6s ease-in-out;
+            -moz-transition: all 0.6s ease-in-out;
+            -webkit-transition: all 0.6s ease-in-out;
+            -o-transition: all 0.6s ease-in-out;
+            background:url("image/business_icon_hover.png")no-repeat center center /100% 100%;
+            animation:circle 5s infinite;
+        }
+        .w1200 ul li:hover .font-big{
+            color: #fff;
+        }
+        .w1200 ul li:hover .con-big-title{
+            color: #fff;
+        }
+        .font-big{
+            display: block;
+            font-size: 80px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .con-big-title{
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            font-size: 24px;
+            transition: all 0.6s ease-in-out;
+            -moz-transition: all 0.6s ease-in-out;
+            -webkit-transition: all 0.6s ease-in-out;
+            -o-transition: all 0.6s ease-in-out;
+            color: rgb(133, 128, 232);
+            position:relative;
+            z-index: 999;
+            transition: all 0.6s ease-in-out;
+            -moz-transition: all 0.6s ease-in-out;
+            -webkit-transition: all 0.6s ease-in-out;
+            -o-transition: all 0.6s ease-in-out;
+        }
+        .content-title{
+            display: none;
+            transition: all 0.6s ease-in-out;
+            -moz-transition: all 0.6s ease-in-out;
+            -webkit-transition: all 0.6s ease-in-out;
+            -o-transition: all 0.6s ease-in-out;
+            margin-top: 50px;
+            position: relative;
+            z-index: 1;
+            padding: 5%;
+            font-size: 14px;
+        }
+        .w1200 ul li:hover .content-title{
+            display: block;
+            color: #fff;
+        }
+        .news{
+            width: 100%;
+            height: 510px;
+            background: url("image/index_news_bg.jpg")no-repeat center center /100% 100%;
+        }
+
+        @keyframes circle
+        {
+            from {
+                transform:rotate(0deg);
+                -moz-transform:rotate(0deg);
+                -webkit-transform:rotate(0deg);
+                -o-transform:rotate(0deg);
+            }
+            to {
+                transform:rotate(-360deg);
+                -moz-transform:rotate(-360deg);
+                -webkit-transform:rotate(-360deg);
+                -o-transform:rotate(-360deg);
+            }
+        }
+
+        @-moz-keyframes circle /* Firefox */
+        {
+            from {
+                transform:rotate(0deg);
+                -moz-transform:rotate(0deg);
+                -webkit-transform:rotate(0deg);
+                -o-transform:rotate(0deg);
+            }
+            to {
+                transform:rotate(-360deg);
+                -moz-transform:rotate(-360deg);
+                -webkit-transform:rotate(-360deg);
+                -o-transform:rotate(-360deg);
+            }
+        }
+
+        @-webkit-keyframes circle /* Safari 和 Chrome */
+        {
+            from {
+                transform:rotate(0deg);
+                -moz-transform:rotate(0deg);
+                -webkit-transform:rotate(0deg);
+                -o-transform:rotate(0deg);
+            }
+            to {
+                transform:rotate(-360deg);
+                -moz-transform:rotate(-360deg);
+                -webkit-transform:rotate(-360deg);
+                -o-transform:rotate(-360deg);
+            }
+        }
+
+        @-o-keyframes circle /* Opera */
+        {
+            from {
+                transform:rotate(0deg);
+                -moz-transform:rotate(0deg);
+                -webkit-transform:rotate(0deg);
+                -o-transform:rotate(0deg);
+            }
+            to {
+                transform:rotate(-360deg);
+                -moz-transform:rotate(-360deg);
+                -webkit-transform:rotate(-360deg);
+                -o-transform:rotate(-360deg);
+            }
+        }
+        @keyframes redbg
+        {
+            from {
+                height:0px;
+            }
+            to {
+                height: 100%;
+            }
+        }
+
+        @-moz-keyframes redbg /* Firefox */
+        {
+            from {
+                height:0px;
+            }
+            to {
+                height: 100%;
+            }
+        }
+
+        @-webkit-keyframes redbg /* Safari 和 Chrome */
+        {
+            from {
+                height:0px;
+            }
+            to {
+                height: 100%;
+            }
+        }
+
+        @-o-keyframes redbg /* Opera */
+        {
+            from {
+                height:0px;
+            }
+            to {
+                height: 100%;
+            }
+        }
+
+        .news-title{
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 50px;
+            margin: 50px;
+            color: #fff;
+        }
+        .news-title P:last-child{
+            font-size: 16px;
+        }
+
         /* 当浏览器的可视区域小于980px */
         @media screen and ( max-width: 980px ) {
             .mobile-menu{
+                box-sizing: border-box;
                 width: 100%;
                 margin: 0 auto;
                 display: flex;
@@ -301,6 +532,12 @@
                 font-size: 20px;
                 color: rgb(133, 128, 232);
             }
+            .content{
+                display: none;
+            }
+            .news{
+                height:100px;
+            }
         }
 
         @media screen and (max-width: 640px){
@@ -324,7 +561,7 @@
                         <a href="index.html" class="active1">首页</a>
                     </li>
                     <li>
-                        <a href="about.html">走进东环</a>
+                        <a data-type="mip" data-title="走进东环" href="about.html">走进东环</a>
                     </li>
                     <li>
                         <a href="">新闻资讯</a>
@@ -374,7 +611,7 @@
                    <h2>东环律师事务所</h2>
                 </li>
                 <li>
-                    <a href="about.html">
+                    <a data-type="mip" data-title="走进东环" href="about.html">
                         <h4>走进东环</h4>
                     </a>
                 </li>
@@ -412,6 +649,9 @@
                 autoplay
                 defer="4000"
                 layout="responsive" width="1920" height="735"
+                buttonController
+                indicatorId="mip-carousel-example"
+                indicator
         >
             <mip-img
                     src="https://www.mipengine.org/static/img/sample_01.jpg">
@@ -429,9 +669,77 @@
 
     <!--content-->
     <div class="content">
-
+        <div class="w1200">
+            <ul>
+                <li>
+                    <div class="red-bg"></div>
+                    <a href="">
+                        <div class="con-big">
+                            <i class="iconfont font-big">&#xe645;</i>
+                        </div>
+                        <span class="con-big-title">刑事法律服务</span>
+                    </a>
+                    <div class="content-title">
+                        刑事辩护业务也是东环传统优势业务领域之一。为实现东环规范化、规模化、专业化、品牌化建设的战略目标，东环专门将刑事辩护业务与其他诉讼仲裁业务分开运行，并且拥有一支专门针对公司犯罪的刑事辩护团队。
+                    </div>
+                </li>
+                <li>
+                    <div class="red-bg"></div>
+                    <a href="">
+                        <div class="con-big">
+                            <i class="iconfont font-big">&#xe6aa;</i>
+                        </div>
+                        <span class="con-big-title">房地产纠纷</span>
+                        <div class="content-title">作为一家大型的、综合性的律师事务所，东环聚集了一批优秀的房地产专业律师。把握政策前沿，及时、准确地为客户提供创新性、综合性的法律服务。</div>
+                    </a>
+                </li>
+                <li>
+                    <div class="red-bg"></div>
+                    <a href="">
+                        <div class="con-big">
+                            <i class="iconfont font-big">&#xe60b;</i>
+                        </div>
+                        <span class="con-big-title">婚姻继承纠纷</span>
+                        <div class="content-title">家事无小事，每一个人都离不开与家庭相关的法律问题。东环婚姻继承专业委员会团队致力于在婚姻继承法律问题方面提供更贴心更专业、更优质的服务。</div>
+                    </a>
+                </li>
+                <li>
+                    <div class="red-bg"></div>
+                    <a href="">
+                        <div class="con-big">
+                            <i class="iconfont font-big">&#xe628;</i>
+                        </div>
+                        <span class="con-big-title">公司综合类业务</span>
+                        <div class="content-title">东环长期为客户提供公司设立、变更、日常经营管理等方面的法律服务。东环围绕客户的主营业务、管理体系，选择不同的切入点，梳理公司面临的各类法律风险，形成了可以嵌入客户日常经营管理的法律风险管理系列产品。</div>
+                    </a>
+                </li>
+                <li>
+                    <div class="red-bg"></div>
+                    <a href="">
+                        <div class="con-big">
+                            <i class="iconfont font-big">&#xe81c;</i>
+                        </div>
+                        <span class="con-big-title">知识产权法律服务</span>
+                        <div class="content-title">东环知识产权专业律师具有深厚的知识产权法学功底和多行业工作背景，很多律师同时具有律师和专利代理人、商标代理人等多种职业认证资格，深厚的法律实践经验和专业技术知识的完美结合，能够为客户提供最佳的知识产权保护方案。</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <!--content end-->
+    <!--news-->
+    <div class="news">
+        <div class="w1200">
+            <div class="news-title">
+                <p>东环资讯</p>
+                <p>Information</p>
+            </div>
+            <div class="news-box">
+
+            </div>
+        </div>
+    </div>
+    <!--new-end-->
 
     <!--footer-->
     <footer>
@@ -462,5 +770,6 @@
 
 <script src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>
 <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+<script src="https://c.mipcdn.com/static/v1/mip-map/mip-map.js"></script>
 </body>
 </html>
