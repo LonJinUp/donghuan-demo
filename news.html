@@ -328,57 +328,91 @@
         .mobile-logo{
             display: none;
         }
-        .pc-3{
-            float: left;
-            width: 33.33%;
-            box-sizing: border-box;
-            margin-top: 10px;
-            -webkit-transition: all .2s linear;
-            transition: all .2s linear;
-            border-radius: 6px;
+        .news-item-box{
+            width: 800px;
+            border: 1px solid #dcdcdc;
+            padding: 20px 35px;
+            margin-bottom: 25px;
         }
-        .pc-3:hover{
-            -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-            box-shadow:0 15px 30px rgba(0,0,0,0.1);
-            -webkit-transform:translate3d(0, -2px, 0);
-            transform:translate3d(0, -2px, 0);
-        }
-        .team-logo{
-            width: 50%;
-            height: 200px;
+        .news-logo{
+            font-size: 0;
+            height: 170px;
+            width: 170px;
             overflow: hidden;
-            margin: 0 auto;
+            float: left;
         }
-        .team-logo img{
-            width: 100%;
-            height: 100%;
+        .news-logo img{
             transition: all 0.6s ease-in-out;
             -moz-transition: all 0.6s ease-in-out;
             -webkit-transition: all 0.6s ease-in-out;
             -o-transition: all 0.6s ease-in-out;
         }
-
-        .team-logo:hover img{
-            transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
-            -o-transform: scale(1.1);
+        .news-item-box:hover .news-logo img{
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
         }
-        .team-title{
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-
+        .news-con{
+            margin-left: 25px;
+            width: 490px;
+            float: left;
         }
-        .team-title h3{
+        .news-con a{
+            border-bottom: 1px dashed #dcdcdc;
+            display: inline-block;
+            margin: 20px 0;
+            color: #c9262b;
             font-size: 18px;
-            color: #333;
+        }
+        .news-con span{
+            line-height: 26px;
+            font-size: 14px;
+            text-overflow: ellipsis;
+        }
+        .news-time{
+            margin: 60px 0px;
+            float: right;
+        }
+        .nian{
+            color: #999999;
+            margin-bottom: 2px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .ri{
+            color: #bbbbbb;
+            font-size: 24px;
             text-align: center;
         }
-        .team-title p{
-            font-size: 14px;
-            color: #666;
+        .page{
+            display: flex;
+            justify-content: center;
         }
+        .page span{
+            background: #c9262b;
+            color: #fff;
+            display: inline-block;
+            border: 1px solid #c9262b;
+            text-align: center;
+            height: 20px;
+            padding: 0 6px;
+            line-height: 20px;
+            margin-right: 12px;
+        }
+        .page span,.page a:hover{background:#c9262b;color:#fff;}
+        .page a{
+            display: inline-block;
+            border: 1px solid #c9262b;
+            color: #c9262b;
+            height: 20px;
+            padding: 0 6px;
+            line-height: 20px;
+            margin-right: 12px;
+        }
+
+
+
 
         /* 当浏览器的可视区域小于980px */
         @media screen and ( max-width: 980px ) {
@@ -486,25 +520,25 @@
         <div class="top-right">
             <ul>
                 <li>
-                    <a href="index.html">首页</a>
+                    <a data-type="mip" data-title="东环律师事务所" href="index.html">首页</a>
+                </li>
+                <li>
+                    <a data-type="mip" data-title="走进东环" href="about.html">走进东环</a>
                 </li>
                 <li class="active">
-                    <a href="" class="active1">走进东环</a>
+                    <a data-type="mip" class="active1" data-title="新闻资讯" href="news.html">新闻资讯</a>
                 </li>
                 <li>
-                    <a href="">新闻资讯</a>
+                    <a data-type="mip" data-title="业务领域" href="content.html">业务领域</a>
                 </li>
-                <li>
-                    <a href="">业务领域</a>
-                </li>
-                <li>
-                    <a href="">律师团队</a>
+                <li >
+                    <a data-type="mip"  data-title="律师团队" href="team.html">律师团队</a>
                 </li>
                 <li>
                     <a href="">案例精选</a>
                 </li>
                 <li>
-                    <a href="">联系我们</a>
+                    <a data-type="mip"  data-title="联系我们" href="tellme.html">联系我们</a>
                 </li>
             </ul>
         </div>
@@ -539,22 +573,22 @@
                 <h2>东环律师事务所</h2>
             </li>
             <li>
-                <a href="#">
+                <a data-type="mip" data-title="走进东环" href="about.html">
                     <h4>走进东环</h4>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a data-type="mip" data-title="新闻资讯" href="news.html">
                     <h4>新闻资讯</h4>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a data-type="mip" data-title="业务领域" href="content.html">
                     <h4>业务领域</h4>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a data-type="mip" data-title="新闻资讯" href="news.html">
                     <h4>律师团队</h4>
                 </a>
             </li>
@@ -564,7 +598,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a data-type="mip" data-title="联系我们" href="tellme.html">
                     <h4>联系我们</h4>
                 </a>
             </li>
@@ -582,7 +616,7 @@
     <div class="con-left">
         <div class="con-about">
             <div class="btn-box">
-                <a class="about-btn" href="about.html">东环资讯</a>
+                <a class="about-btn active" href="about.html">东环资讯</a>
                 <!--<a class="about-btn active" href="team.html">今中团队</a>-->
             </div>
             <img src="image/left_img.jpg" alt="" class="left-img">
@@ -601,9 +635,53 @@
                 <a href="">东环资讯</a>
             </div>
         </div>
-        <div class="about-title">律师团队</div>
+        <div class="about-title">东环资讯</div>
         <div class="about-content">
+            <div class="news-item-box">
+                <div class="news-logo">
+                    <img src="image/69.jpg.thumb.170x170.jpg" alt="">
+                </div>
+                <div class="news-con">
+                    <a href="" class="news-title">东环律师事务所</a>
+                    <br>
+                    <span>
+                        中今劳动法办案组律师均为行业内资深律师，专门从事劳动领域法律法规的研究，每名办案律师每年办理劳动争议案件近百起，积累了丰富大量的实践经验，为无数劳动者及公司提供精准的法律意见及指导，解决了一起又一起的...
+                    </span>
+                </div>
+                <div class="news-time">
+                    <div class="nian">2018</div>
+                    <div class="ri">10/5</div>
+                </div>
+            </div>
 
+            <div class="news-item-box">
+                <div class="news-logo">
+                    <img src="image/69.jpg.thumb.170x170.jpg" alt="">
+                </div>
+                <div class="news-con">
+                    <a href="" class="news-title">东环律师事务所</a>
+                    <br>
+                    <span>
+                        中今劳动法办案组律师均为行业内资深律师，专门从事劳动领域法律法规的研究，每名办案律师每年办理劳动争议案件近百起，积累了丰富大量的实践经验，为无数劳动者及公司提供精准的法律意见及指导，解决了一起又一起的...
+                    </span>
+                </div>
+                <div class="news-time">
+                    <div class="nian">2018</div>
+                    <div class="ri">10/5</div>
+                </div>
+            </div>
+
+            <div class="page">
+                <a href="">上一页</a>
+                <span>1</span>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">7</a>
+                <a href="">下一页</a>
+            </div>
         </div>
     </div>
 </div>

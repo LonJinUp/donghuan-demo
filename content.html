@@ -239,7 +239,6 @@
         .con-right{
             float: right;
             min-height: 760px;
-            box-shadow: 0px 0px 5px 2px rgba(218,218,218,0.45);
             width: 944px;
             border-top: 0;
             background: #fff;
@@ -310,15 +309,9 @@
             margin-left: 30px;
             color: #999999;
         }
-        .about-title{
-            height: 75px;
-            line-height: 75px;
-            text-align: center;
-            font-size: 24px;
-            color: #666;
-        }
+
         .about-content{
-            width: 884px;
+            width: 100%;
             background: #fff;
             line-height: 26px;
             margin: 0px auto;
@@ -327,6 +320,66 @@
         }
         .mobile-logo{
             display: none;
+        }
+        .con-item{
+            box-shadow: 0px 2px 5px 2px rgba(218,218,218,0.7);
+            padding: 20px;
+            width: 95%;
+            margin: 0 auto;
+            margin-bottom:40px;
+        }
+        .con-item:hover .con-item-a img{
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+        }
+        .con-item-a{
+            width: 267px;
+            height: 179px;
+            overflow: hidden;
+            float: left;
+        }
+        .con-item-a img{
+            transition: all 1s ease-in-out;
+            -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+        }
+        .con-item-right{
+            width: 480px;
+            margin-left: 40px;
+            float: left;
+        }
+        .con-item-right a{
+            height: 50px;
+            display: block;
+            color: #333;
+            line-height: 50px;
+            font-size: 30px;
+        }
+        .con-item-r-con{
+            font-size: 18px;
+        }
+        .con-item-r-con a{
+            display: block;
+            width: 50%;
+            margin-top: 15px;
+            float: left;
+            color: #666666;
+            font-size: 18px;
+
+        }
+        .con-item-r-con span{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            border: 1px #cc3136 solid;
+            margin-right: 5px;
+        }
+        .right{
+            float: right;
         }
 
         /* 当浏览器的可视区域小于980px */
@@ -415,6 +468,7 @@
                 color: rgb(133, 128, 232);
             }
 
+
         }
 
         @media screen and (max-width: 640px){
@@ -437,15 +491,14 @@
                 <li>
                     <a data-type="mip" data-title="东环律师事务所" href="index.html">首页</a>
                 </li>
-
-                <li class="active">
-                    <a data-type="mip" class="active" data-title="走进东环" href="about.html">走进东环</a>
+                <li>
+                    <a data-type="mip" data-title="走进东环" href="about.html">走进东环</a>
                 </li>
                 <li>
                     <a data-type="mip" data-title="新闻资讯" href="news.html">新闻资讯</a>
                 </li>
-                <li>
-                    <a data-type="mip" data-title="业务领域" href="content.html">业务领域</a>
+                <li class="active">
+                    <a data-type="mip" class="active1" data-title="业务领域" href="content.html">业务领域</a>
                 </li>
                 <li>
                     <a data-type="mip" data-title="律师团队" href="team.html">律师团队</a>
@@ -454,7 +507,7 @@
                     <a href="">案例精选</a>
                 </li>
                 <li>
-                    <a data-type="mip"  data-title="联系我们" href="tellme.html">联系我们</a>
+                    <a data-type="mip"  data-title="联系我们" href="about.html">联系我们</a>
                 </li>
             </ul>
         </div>
@@ -532,8 +585,7 @@
     <div class="con-left">
         <div class="con-about">
             <div class="btn-box">
-                <a class="about-btn active" href="#">关于我们</a>
-                <a class="about-btn" href="team.html">今中团队</a>
+                <a class="about-btn active" href="content.html">业务领域</a>
             </div>
             <img src="image/left_img.jpg" alt="" class="left-img">
             <span>东环律师事务所</span>
@@ -547,19 +599,56 @@
     <div class="con-right">
         <div class="r_top">
             <div class="page-wz">您当前所在的位置:
-                <a href="">首页></a>
-                <a href="">走进东环</a>
+                <a data-type="mip" data-title="东环律师事务所" href="about.html">首页 ></a>
+                <a data-type="mip" data-title="律师团队" href="team.html">业务领域</a>
             </div>
         </div>
-        <div class="about-title">关于东环</div>
         <div class="about-content">
-             &nbsp;&nbsp; &nbsp;&nbsp;北京东环律师事务所简称东环律师事务所，是一家由多位具备律师资格的原国家司法行政机关工作人员及一批有着多年执业律师工作经验的资深律师组成。其业务主要包括非诉业务、民商诉讼、刑事诉讼等全面律师法律服务业务。办公地点设在北京，业务遍布全国。北京东环律师事务所坚持和坚守“公平正义，法律至上的理念”，“始终以当事人的利益为最大利益”，以“务实、高效”为工作基本要求。
+            <div class="con-item">
+                <a href="" class="con-item-a">
+                    <img src="image/ywly_img.jpg" alt="">
+                </a>
+                <div class="con-item-right">
+                    <a href="">企业法律顾问</a>
+                    <div class="con-item-r-con">
+                        <a href="">
+                            <span></span>
+                            日常法律咨询
+                        </a>
+                        <a href="">
+                            <span></span>
+                            日常法律咨询
+                        </a>
+                        <a href="">
+                            <span></span>
+                            日常法律咨询
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-            北京东环律师事务所在发展中坚持"以人为本"的人才战略，逐步形成了由专业律师人才、专业市场人才、专业管理人才组成的人才队伍，保障了律师事务所整体战略目标的逐步实现。<br> <br>
-
-            &nbsp;&nbsp; &nbsp;&nbsp;为客户提供满意的法律服务是我们矢志不渝的目标，北京东环律师事务所坚持以”专业”、"务实“、”高效"为服务原则，坚持以 “诚心““真心”“责任心”对待客户为立所的根本，始终以客户的需求为关注焦点，以顾客满意为工作目标，充分发挥专业优势，为客户提供专业化、综合性的法律服务。
-
-            北京东环律师事务所位于北京东二环商务区，拥有便捷的交通和集中的商务资源。北京东环律师具备国内外著名法律学府的教育背景以及在金融、知识产权、国际贸易等行业企业、行业协会、大学和司法行政机关的工作经历。这些优势使得东环律师在各自业务领域能够为客户提供高标准的法律服务，包括民商诉讼、刑事诉讼、企业风险防控、金融、证券、房地产与基础设施、公司、破产重整、知识产权、能源与环保、信息技术等十一个业务领域。同时，东环律师事务所不断学习和追求先进的管理理念，东环律师不满足于现状，如饥似渴地用新的知识充实和武装自己，发扬高度的团队合作精神，不同业务领域的律师相互配合为客户提供全方位的满意的法律服务。
+            <div class="con-item">
+                <a href="" class="con-item-a right">
+                    <img src="image/ywly_img.jpg" alt="">
+                </a>
+                <div class="con-item-right right">
+                    <a href="">企业法律顾问</a>
+                    <div class="con-item-r-con">
+                        <a href="">
+                            <span></span>
+                            日常法律咨询
+                        </a>
+                        <a href="">
+                            <span></span>
+                            日常法律咨询
+                        </a>
+                        <a href="">
+                            <span></span>
+                            日常法律咨询
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
