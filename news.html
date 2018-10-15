@@ -238,7 +238,7 @@
         }
         .con-right{
             float: right;
-            min-height: 760px;
+            min-height: 560px;
             box-shadow: 0px 0px 5px 2px rgba(218,218,218,0.45);
             width: 944px;
             border-top: 0;
@@ -329,6 +329,7 @@
             display: none;
         }
         .news-item-box{
+
             width: 800px;
             border: 1px solid #dcdcdc;
             padding: 20px 35px;
@@ -410,6 +411,9 @@
             line-height: 20px;
             margin-right: 12px;
         }
+        .news-item-mobile{
+            display: none;
+        }
 
 
 
@@ -442,7 +446,10 @@
                 margin: 10px 0;
             }
             .menu-box h2{
-                font-size: 20px;
+                font-size: 22px;
+            }
+            .menu-box h4{
+                font-size: 18px;
             }
             .footer-con{
                 display: none;
@@ -458,7 +465,7 @@
                 padding:0 10px;
             }
             .con-right{
-                min-height: 760px;
+                min-height: auto;
                 box-shadow: 0px 0px 5px 2px rgba(218,218,218,0.45);
                 border-top: 0;
                 background: #fff;
@@ -506,6 +513,7 @@
                 justify-content: space-between;
             }
             .news-item-mobile{
+                display: block;
                 width: 100%;
                 padding: 10px;
                 box-sizing: border-box;
@@ -590,9 +598,17 @@
             id="sidebar"
             layout="nodisplay"
             class="mip-hidden mobile-menu-box">
+        <div class="mobile-logo">
+            <div class="mobile-logo-box">
+                <mip-img src="image/logo-mob.jpeg"></mip-img>
+            </div>
+            <div class="mobile-text">东环律师事务所</div>
+        </div>
         <ul class="menu-box">
             <li>
-                <h2>东环律师事务所</h2>
+                <a data-type="mip" data-title="首页" href="index.html">
+                    <h4>首页</h4>
+                </a>
             </li>
             <li>
                 <a data-type="mip" data-title="走进东环" href="about.html">
@@ -610,7 +626,7 @@
                 </a>
             </li>
             <li>
-                <a data-type="mip" data-title="新闻资讯" href="news.html">
+                <a data-type="mip" data-title="新闻资讯" href="team.html">
                     <h4>律师团队</h4>
                 </a>
             </li>
@@ -664,7 +680,23 @@
                     <img src="image/69.jpg.thumb.170x170.jpg" alt="">
                 </div>
                 <div class="news-con">
-                    <a href="" class="news-title">东环律师事务所</a>
+                    <a href="item.html" class="news-title">东环律师事务所</a>
+                    <br>
+                    <span>
+                        中今劳动法办案组律师均为行业内资深律师，专门从事劳动领域法律法规的研究，每名办案律师每年办理劳动争议案件近百起，积累了丰富大量的实践经验，为无数劳动者及公司提供精准的法律意见及指导，解决了一起又一起的...
+                    </span>
+                </div>
+                <div class="news-time">
+                    <div class="nian">2018</div>
+                    <div class="ri">10/5</div>
+                </div>
+            </div>
+            <div class="news-item-box">
+                <div class="news-logo">
+                    <img src="image/69.jpg.thumb.170x170.jpg" alt="">
+                </div>
+                <div class="news-con">
+                    <a href="item.html" class="news-title">东环律师事务所</a>
                     <br>
                     <span>
                         中今劳动法办案组律师均为行业内资深律师，专门从事劳动领域法律法规的研究，每名办案律师每年办理劳动争议案件近百起，积累了丰富大量的实践经验，为无数劳动者及公司提供精准的法律意见及指导，解决了一起又一起的...
@@ -676,22 +708,7 @@
                 </div>
             </div>
 
-            <div class="news-item-box">
-                <div class="news-logo">
-                    <img src="image/69.jpg.thumb.170x170.jpg" alt="">
-                </div>
-                <div class="news-con">
-                    <a href="" class="news-title">东环律师事务所</a>
-                    <br>
-                    <span>
-                        中今劳动法办案组律师均为行业内资深律师，专门从事劳动领域法律法规的研究，每名办案律师每年办理劳动争议案件近百起，积累了丰富大量的实践经验，为无数劳动者及公司提供精准的法律意见及指导，解决了一起又一起的...
-                    </span>
-                </div>
-                <div class="news-time">
-                    <div class="nian">2018</div>
-                    <div class="ri">10/5</div>
-                </div>
-            </div>
+
 
             <!--移动端-->
             <div class="news-item-mobile">

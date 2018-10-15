@@ -328,20 +328,63 @@
         .mobile-logo{
             display: none;
         }
-        .tell-box{
-            width: 750px;
-            padding: 45px 90px 20px 30px;
-            border: 1px solid #e69cef;
-            background: #fff;
-            line-height: 26px;
-            margin: 0px auto;
-        }
-        .map-box{
-            width: 100%;
+        .pc-3{
+            float: left;
+            width: 33.33%;
             box-sizing: border-box;
-            padding: 20px;
+            margin-top: 10px;
+            -webkit-transition: all .2s linear;
+            transition: all .2s linear;
+            border-radius: 6px;
+        }
+        .pc-3:hover{
+            -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            box-shadow:0 15px 30px rgba(0,0,0,0.1);
+            -webkit-transform:translate3d(0, -2px, 0);
+            transform:translate3d(0, -2px, 0);
+        }
+        .team-logo{
+            width: 50%;
+            height: 200px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .team-logo img{
+            width: 100%;
+            height: 100%;
+            transition: all 0.6s ease-in-out;
+            -moz-transition: all 0.6s ease-in-out;
+            -webkit-transition: all 0.6s ease-in-out;
+            -o-transition: all 0.6s ease-in-out;
         }
 
+        .team-logo:hover img{
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+        }
+        .team-title{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            height: 200px;
+
+        }
+        .team-title h3{
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+        }
+        .team-title span{
+            text-overflow: ellipsis;
+            font-size: 14px;
+            color: #666;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
+        }
 
         /* 当浏览器的可视区域小于980px */
         @media screen and ( max-width: 980px ) {
@@ -431,10 +474,14 @@
                 font-size: 20px;
                 color: rgb(133, 128, 232);
             }
-            .tell-box{
-                width:auto;
-                padding:10px;
+            .pc-3{
+                float: left;
+                width: 50%;
             }
+            .team-logo{
+                width: 80%;
+            }
+
         }
 
         @media screen and (max-width: 640px){
@@ -467,13 +514,14 @@
                     <a data-type="mip" data-title="业务领域" href="content.html">业务领域</a>
                 </li>
                 <li>
-                    <a data-type="mip" data-title="律师团队" href="team.html">律师团队</a>
+                    <a data-type="mip"  data-title="律师团队" href="about.html">律师团队</a>
                 </li>
                 <li>
                     <a data-type="mip" data-title="案例精选" href="case.html">案例精选</a>
+
                 </li>
-                <li class="active">
-                    <a data-type="mip" class="active1" data-title="联系我们" href="about.html">联系我们</a>
+                <li>
+                    <a data-type="mip"  data-title="联系我们" href="tellme.html">联系我们</a>
                 </li>
             </ul>
         </div>
@@ -559,7 +607,8 @@
     <div class="con-left">
         <div class="con-about">
             <div class="btn-box">
-                <a class="about-btn active" href="team.html">联系我们</a>
+                <a class="about-btn" href="about.html">关于我们</a>
+                <a class="about-btn" href="team.html">今中团队</a>
             </div>
             <img src="image/left_img.jpg" alt="" class="left-img">
             <span>东环律师事务所</span>
@@ -571,51 +620,15 @@
     </div>
 
     <div class="con-right">
-        <div class="r_top">
-            <div class="page-wz">您当前所在的位置:
-                <a data-type="mip" data-title="东环律师事务所" href="index.html">首页</a>
-                <a data-type="mip" data-title="联系我们" href="tellme.html">联系我们</a>
-            </div>
-        </div>
-        <div class="about-title">联系我们</div>
+        <div class="about-title">这是一篇文章</div>
         <div class="about-content">
-            <div class="tell-box">
-                咨询热线：010-53678058 <br>
-                业务QQ  ：3373590865 <br>
-                邮    箱：DH@donghuanlawyers.com<br>
-                网    址：www.donghuanlawyers.com<br>
-                地    址：北京市东城区南竹竿胡同6号北京INN大厦3号楼607<br>
-                乘车路线：公交44、特2、特12朝阳门南下车；<br>
-                公交110、101、109、140、58朝阳门内下车；<br>
-                地铁2号线、6号线朝阳门站H口出<br>
-            </div>
-        </div>
+            <p>
+                      一天，小红帽在森林里玩耍，突然，一只小熊跳了出来，喊:“哇!”“啊!”小红帽吓坏了。她努力让自己冷静下来，对自己说:“冷静，小红帽，冷静!”这时，小红帽起了奶奶的话“如果有动物攻击或吓你，都是有原因的。 1.想想你有没有伤害它? 2.想想他为什么攻击或吓你，你有没有做什么招惹它的事? 3.你要跟他讲道理，如果你不讲道理，直接反击，你会遭到更大的伤害。如果这些你都没有做到，你会遍体鳞伤。”
 
-        <div class="map-box">
-            <mip-map height="300">
-                <script type="application/json">
-                    {
-                        "ak": "hKhuzfFBrcL6zGm4s6b371NDxaUrhFPl",
-                        "location": {
-                            "province": "北京",
-                            "city": "北京市",
-                            "district": "东城区",
-                            "street": "南竹竿胡同6号北京INN大厦3号楼607"
-                        },
-                        "controls": {
-                            "NavigationControl": {
-                            },
-                            "MapTypeControl": {
-                            }
-                        },
-                        "info": {
-                            "width" : 250,
-                            "height": 100,
-                            "content": "<h4>百度科技园1号楼</h4><p style='line-height:1.5;font-size:13px;'>百度科技园1号楼坐落于北京北京市海淀区西北旺东路10号院</p></div>"
-                        }
-                    }
-                </script>
-            </mip-map>
+小红帽想了想:“1.自己没有伤害它。2.熊吓自己是因为他可能需要帮助，因为自己并没有做招惹小熊的事 。3.没有跟小熊讲道理，奶奶说要讲道理，所以现在小红帽需要跟小熊讲道理。”想到这里，小红帽就跟小熊说:“小熊，如果你需要帮助，你可以叫一下我，但是不能突然跳出来吓我，如果你把我吓晕了需要你送我去医院。回去你妈妈有可能还会批评你。如果你想攻击我，我要告诉你:攻击别人是不对的，你攻击别人，把别人打伤了，你还需要把别人送到医院。让医生给别人的伤口治好。”
+
+小熊听到了，立刻道歉说:“对不起，我不是故意的，我只是想和你一起玩。”小红帽说:“ 没关系，这是这一点需要改哦!”小熊说:“嗯，我会改的。”小红帽说:“好!你不是想跟我一起玩吗?现在我们一起玩吧!”“好!”这个故事也就圆满的结束了。
+            </p>
         </div>
     </div>
 </div>
@@ -650,7 +663,6 @@
 
 
 <script src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>
-<script src="https://c.mipcdn.com/static/v1/mip-map/mip-map.js"></script>
 <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
 </body>
 </html>

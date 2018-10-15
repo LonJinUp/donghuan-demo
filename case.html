@@ -412,7 +412,10 @@
                 margin: 10px 0;
             }
             .menu-box h2{
-                font-size: 20px;
+                font-size: 22px;
+            }
+            .menu-box h4{
+                font-size: 18px;
             }
             .footer-con{
                 display: none;
@@ -544,9 +547,17 @@
             id="sidebar"
             layout="nodisplay"
             class="mip-hidden mobile-menu-box">
+        <div class="mobile-logo">
+            <div class="mobile-logo-box">
+                <mip-img src="image/logo-mob.jpeg"></mip-img>
+            </div>
+            <div class="mobile-text">东环律师事务所</div>
+        </div>
         <ul class="menu-box">
             <li>
-                <h2>东环律师事务所</h2>
+                <a data-type="mip" data-title="首页" href="index.html">
+                    <h4>首页</h4>
+                </a>
             </li>
             <li>
                 <a data-type="mip" data-title="走进东环" href="about.html">
@@ -564,7 +575,7 @@
                 </a>
             </li>
             <li>
-                <a data-type="mip" data-title="新闻资讯" href="news.html">
+                <a data-type="mip" data-title="新闻资讯" href="team.html">
                     <h4>律师团队</h4>
                 </a>
             </li>
