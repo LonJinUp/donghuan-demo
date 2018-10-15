@@ -77,11 +77,11 @@
 
         @font-face {
             font-family: 'iconfont';  /* project id 864609 */
-            src: url('//at.alicdn.com/t/font_864609_uzz64zmwno.eot');
-            src: url('//at.alicdn.com/t/font_864609_uzz64zmwno.eot?#iefix') format('embedded-opentype'),
-            url('//at.alicdn.com/t/font_864609_uzz64zmwno.woff') format('woff'),
-            url('//at.alicdn.com/t/font_864609_uzz64zmwno.ttf') format('truetype'),
-            url('//at.alicdn.com/t/font_864609_uzz64zmwno.svg#iconfont') format('svg');
+            src: url('//at.alicdn.com/t/font_864609_awohlxd9li5.eot');
+            src: url('//at.alicdn.com/t/font_864609_awohlxd9li5.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_864609_awohlxd9li5.woff') format('woff'),
+            url('//at.alicdn.com/t/font_864609_awohlxd9li5.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_864609_awohlxd9li5.svg#iconfont') format('svg');
         }
         .iconfont{
             font-family:"iconfont" !important;
@@ -387,7 +387,7 @@
         }
         .page{
             display: flex;
-            justify-content: center;
+            justify-content:center;
         }
         .page span{
             background: #c9262b;
@@ -499,7 +499,29 @@
                 font-size: 20px;
                 color: rgb(133, 128, 232);
             }
-
+            .news-item-box{
+                display: none;
+            }
+            .page{
+                justify-content: space-between;
+            }
+            .news-item-mobile{
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                border-bottom: 1px dashed #dcdcdc;
+                overflow:hidden;text-overflow:ellipsis;
+            }
+            .page{
+                margin-top: 20px;
+            }
+            .about-title{
+                height: 50px;
+                line-height: 50px;
+            }
+            .jt-right{
+                font-size: 20px;
+            }
         }
 
         @media screen and (max-width: 640px){
@@ -535,7 +557,7 @@
                     <a data-type="mip"  data-title="律师团队" href="team.html">律师团队</a>
                 </li>
                 <li>
-                    <a href="">案例精选</a>
+                    <a data-type="mip" data-title="案例精选" href="case.html">案例精选</a>
                 </li>
                 <li>
                     <a data-type="mip"  data-title="联系我们" href="tellme.html">联系我们</a>
@@ -593,7 +615,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a data-type="mip" data-title="案例精选" href="case.html">
                     <h4>案例精选</h4>
                 </a>
             </li>
@@ -671,6 +693,29 @@
                 </div>
             </div>
 
+            <!--移动端-->
+            <div class="news-item-mobile">
+                <nobr>
+                    最新新闻你哈六点多的点点滴滴点点滴滴时代尖端科技时代就开始觉得看精神科
+                </nobr>
+            </div>
+            <div class="news-item-mobile">
+                <nobr>
+                    最新新闻你哈六点多的点点滴滴点点滴滴时代尖端科技时代就开始觉得看精神科
+                </nobr>
+            </div>
+            <div class="news-item-mobile">
+                <nobr>
+                    最新新闻你哈六点多的点点滴滴点点滴滴时代尖端科技时代就开始觉得看精神科
+                </nobr>
+            </div>
+            <div class="news-item-mobile">
+                <nobr>
+                    最新新闻你哈六点多的点点滴滴点点滴滴时代尖端科技时代就开始觉得看精神科
+                </nobr>
+            </div>
+
+
             <div class="page">
                 <a href="">上一页</a>
                 <span>1</span>
@@ -679,7 +724,7 @@
                 <a href="">4</a>
                 <a href="">5</a>
                 <a href="">6</a>
-                <a href="">7</a>
+                <!--<a href="">7</a>-->
                 <a href="">下一页</a>
             </div>
         </div>
